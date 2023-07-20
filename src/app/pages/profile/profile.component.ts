@@ -12,16 +12,16 @@ export class ProfileComponent {
   constructor() {
     this.employee = {
       ID: 7,
-      FirstName: 'Sandra',
-      LastName: 'Johnson',
-      Prefix: 'Mrs.',
-      Position: 'Controller',
-      Picture: 'images/employees/06.png',
-      BirthDate: new Date('1974/11/5'),
-      HireDate: new Date('2005/05/11'),
+      FirstName: 'Serge',
+      LastName: 'Guea',
+      Prefix: 'Mr.',
+      Position: 'Front End Developer',
+      Picture: '',
+      BirthDate: new Date('1999/10/5'),
+      HireDate: new Date('2023/05/06'),
       /* tslint:disable-next-line:max-line-length */
-      Notes: 'Sandra is a CPA and has been our controller since 2008. She loves to interact with staff so if you`ve not met her, be certain to say hi.\r\n\r\nSandra has 2 daughters both of whom are accomplished gymnasts.',
-      Address: '4600 N Virginia Rd.'
+      Notes:'Serge Guea è uno sviluppatore front-end con una passione per apprendimento e un amore per lo sviluppo di applicazioni web. Attualmente sta lavorando a tempo pieno come sviluppatore front-end presso una società  TAS GROUP , e ha lavorato con una varietà di tecnologie web e di programmazione, tra cui C ++, Java,Typescript, JavaScript, HTML, CSS, SQL . Inoltre, ha esperienza con le librerie e i framework JavaScript come  Angular ',
+      Address: 'via virgilio 19 Formia.'
     };
     this.colCountByScreen = {
       xs: 1,
