@@ -36,7 +36,7 @@ export class NotAuthorizedContainerComponent {
   get description() {
     const path = this.router.url.split('/')[1];
     switch (path) {
-      case 'reset-password': return 'Please enter the email address that you used to register, and we will send you a link to reset your password via Email.';
+      case 'reset-password': return 'Inserisci indirizzo e-mail che hai usato per registrarti e ti invieremo un link per reimpostare la tua password via e-mail.';
       default: return '';
     }
   }

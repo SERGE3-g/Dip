@@ -1,5 +1,5 @@
 import { Component } from '@angular/core';
-import 'devextreme/data/odata/store';
+//'devextreme/data/odata/store'
 
 @Component({
   templateUrl: 'tasks.component.html'
@@ -7,14 +7,14 @@ import 'devextreme/data/odata/store';
 
 export class TasksComponent {
   dataSource: any;
-  priority: any[];
-
+  priority: any;
   constructor() {
     this.dataSource = {
       store: {
-        type: 'odata',
+        type: 'data',
         key: 'Task_ID',
-        url: 'https://js.devexpress.com/Demos/DevAV/odata/Tasks'
+        url: ' http://localhost:5200/tasks'
+        //https://js.devexpress.com/Demos/DevAV/odata/Tasks
       },
       expand: 'ResponsibleEmployee',
       select: [
