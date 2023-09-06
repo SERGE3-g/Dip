@@ -3,6 +3,27 @@
 <div class="container">
   <h1>Benvenuto nella nostra azienda!</h1>
   <p>Scopriamo insieme le ultime notizie e gli aggiornamenti:</p>
+  <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
+    <div class="carousel-indicators">
+      <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active"
+        aria-current="true" aria-label="Slide 1"></button>
+      <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1"
+        aria-label="Slide 2"></button>
+      <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2"
+        aria-label="Slide 3"></button>
+    </div>
+    <div class="carousel-inner">
+      <div class="carousel-item active">
+        <img src="../../assets/image/farma3.jpg" class="d-block w-100" alt="...">
+      </div>
+      <div class="carousel-item">
+        <img src="../../assets/image/farma2.jpg" class="d-block w-100" alt="...">
+      </div>
+      <div class="carousel-item">
+        <img src="../../assets/image/farma1.jpg" class="d-block w-100" alt="...">
+      </div>
+      </div>
+      </div>
 
   <div class="news-container">
     <div class="news-card" *ngFor="let news of newsItems">
@@ -19,19 +40,20 @@
   <section class="widgets">
     <div class="widget">
       <h3>Calendario</h3>
-      <img src="calendar.png" alt="Calendario">
+      <img src="../../assets/images/calendar.jpg" alt="Calendario">
       <p>Gestisci le tue attività e gli eventi importanti utilizzando il nostro calendario integrato.</p>
+      <a routerLink="/calendario">Vedi calendario</a>
     </div>
 
     <div class="widget">
       <h3>Task Manager</h3>
-      <img src="task.png" alt="Task Manager">
+      <img src="../../assets/images/task.jpg" alt="Task Manager">
       <p>Tieni traccia dei tuoi compiti e gestisci le tue attività quotidiane con il nostro efficiente Task Manager.</p>
     </div>
 
     <div class="widget">
       <h3>Risorse</h3>
-      <img src="resources.png" alt="Risorse">
+      <img src="../../assets/images/resource.jpg" alt="Risorse">
       <p>Accedi a tutte le risorse e gli strumenti necessari per svolgere il tuo lavoro in modo efficace.</p>
     </div>
   </section>

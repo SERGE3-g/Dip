@@ -128,7 +128,8 @@ export class AuthGuardService implements CanActivate {
       'login-form',
       'reset-password',
       'create-account',
-      'change-password/:recoveryCode'
+      'change-password/:recoveryCode',
+      'calendario'
     ].includes(route.routeConfig?.path || defaultPath);
 
     if (isLoggedIn && isAuthForm) {
